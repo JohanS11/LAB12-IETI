@@ -1,4 +1,4 @@
-# 3.2 Android Secure REST API
+# 3.2 Android Secure REST API - Johan Sebastián Arias
 
 
 #### Part 1: Launch Activity and Login Activity 
