@@ -35,7 +35,6 @@ public class LoginActivity extends AppCompatActivity {
     public void onLogin(View view) {
         EditText email = findViewById(R.id.editTextTextEmailAddress);
         EditText password = findViewById(R.id.editTextTextPassword);
-        System.out.println("hola");
         if (email.getText().toString().isEmpty()) {
             email.setError("Email cannot be empty");
         }
@@ -44,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         }else{
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http:/192.168.0.13:8080") //localhost for emulator
+                    .baseUrl("http:/10.0.2.2:8080") //localhost for emulator
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
